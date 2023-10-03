@@ -40,6 +40,7 @@ describe('My First Test Suit', function()
                 cy.log(logoelement.text())
             })
 
+            
         })
 
 
