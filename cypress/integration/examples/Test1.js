@@ -27,9 +27,9 @@ describe('My First Test Suit', function()
             })
             
             cy.get('@productLocator').find('.product').each(($e1, index, $list) => {
-                const textveg=$e1.find('h4.product-name').text();
+                const textveg=$e1.find('h4.product-name').text()
                 if(textveg.includes('Cashews')){
-                    cy.wrap($e1).find('button').click();
+                    cy.wrap($e1).find('button').click()
                 }
             })
             //Assert logo text
